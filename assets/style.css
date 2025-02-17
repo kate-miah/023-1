@@ -1,0 +1,75 @@
+* {
+    text-align: center;
+}
+
+html {
+    --user-photo-width: 120px;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-card  {
+    max-width: 350px;
+    min-width: 250px; 
+    width: 100%;
+    height: 450px;
+    margin: 50px auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 1em;
+}
+.background {
+    background-image: url(/assets/Himalayas\,_Ama_Dablam\,_Nepal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45%;
+    color: gray;
+    padding: 20px;
+    text-align: right;
+}
+
+.user-image {
+    width: var(--user-photo-width);
+    height: var(--user-photo-width);
+    object-fit: cover;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: calc((-1) * var(--user-photo-width)/2);
+    border: solid 3px white;
+}
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.user-info {
+    font-size: 1rem;
+    padding-bottom: 15px;
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.user-link {
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding-top: 10px;
+    width: 45px;
+    height: 35px;
+}
